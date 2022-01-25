@@ -23,14 +23,7 @@ try{
   })
   console.log(userId);
 
-//  var email = 'no id'
   firebase.auth().signInAnonymously();
-  // firebase.auth().onAuthStateChanged(firebaseUser => {
-  //   if (userId == 'no id'){
-  //     console.log(firebaseUser);
-  //     userId = firebaseUser.uid;
-  //   }
-  // });
 
 
   chrome.runtime.onMessage.addListener((msg, sender, response) => {

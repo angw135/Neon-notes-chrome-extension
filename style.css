@@ -7,9 +7,45 @@ html, body{
 }
 
 h1{
-    font-family: Roboto, Segoe UI, 'Times New Roman', Times, serif;
+    font-family: 'Varela Round', Roboto, Segoe UI, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-shadow:
+    0 0 3px #fff,
+    0 0 4px #fff,
+    0 0 7px #f156c1,
+    0 0 7px #f156c1,
+    0 0 10px #f156c1,
+    0 0 20px #f156c1,
+    0 0 40px #f156c1,
+    0 0 60px #f156c1
+}
+b, strong{
+    color: #fff;
+    text-shadow:
+    0 0 2px #09e2ff,
+    0 0 2px #09e2ff,
+    0 0 4px #09e2ff94
+}
+
+i, em{
+    color: #fff;
+    text-shadow:
+    0 0 2px #fff,
+    0 0 2px #d9ff00,
+    0 0 2px #d9ff00,
+    0 0 4px #d9ff00
+}
+
+u{
+    color: #fff;
+    text-shadow:
+    0 0 2px #fff,
+    0 0 2px #f156c1,
+    0 0 2px #f156c1,
+    0 0 4px #f156c1
 }
 
 h2{
@@ -22,12 +58,7 @@ h2{
 }
 
 body{
-    background: #CEC5DF;
-    color: #30283E;
-}
-
-body.dark{
-    background: #30283E;
+    background: #271d35;
     color: #CEC5DF;
 }
 
@@ -37,13 +68,19 @@ div.main{
 }
 aside.sidebar{
     width: 300px;
-    background: #887B9F;
+    background: #1d1628;
     height: 100%;
     position: fixed;
+    overflow-y: scroll;
+    padding-bottom: 2em;
 }
-.dark aside.sidebar{
-    background: #292234
-}
+
+aside:after {
+    content: "";
+    display: block;
+    height: 4em;
+    width: 100%;
+  }
 div.newNote{
     padding-bottom: 5px;
     font-weight: bold;
@@ -69,7 +106,7 @@ div.icon{
     vertical-align: middle;
 }
 .holder div.post-body{
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 [contenteditable]:focus{
@@ -77,7 +114,9 @@ div.icon{
 }
 [placeholder]:empty:before{
     content: attr(placeholder);
-    color: inherit;
+    color: #CEC5DF;
+    font-family: roboto, 'Segoe UI', sans-serif;
+    text-shadow: none;
     opacity:0.5;
     cursor:text;
 }
@@ -100,7 +139,7 @@ ul{
 .newNote:hover,
 ul li.active,
 ul li:hover{
-    background-color: #716785;
+    background-color: #4c465a;
 }
 
 .deletePage{
@@ -129,4 +168,17 @@ ul li:hover{
 .post-body{
     min-height: 100px;
     width: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}::-webkit-scrollbar-track{
+    border-radius: 5px;
+    background-color: #716785;
+}::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(0deg, #e3f552, #f156c1);
+}
+aside.sidebar::-webkit-scrollbar{
+    display:none;
 }
