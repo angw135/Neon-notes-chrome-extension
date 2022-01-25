@@ -83,8 +83,15 @@ aside:after {
   }
 div.newNote{
     padding-bottom: 5px;
-    font-weight: bold;
+    font-family: 'Varela Round', Roboto, Segoe UI, sans-serif;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #00f6ff, 0 0 7px #00f6ff, 0 0 10px #00f6ff;
 }
+.newNote:hover {
+    text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #f156c1, 0 0 7px #f156c1, 0 0 10px #f156c1;
+}
+
 section.holder{
     margin-left: 300px;
     width: -webkit-fill-available;
