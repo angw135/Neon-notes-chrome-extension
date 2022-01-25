@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "Take notes on new tab window:)",
     "permissions":[
-        "identity.email"
+        "identity"
     ],
     "background": {
         "service_worker": "firebase.js"

@@ -17,12 +17,20 @@ try{
 
   console.log(firebase);
 
-  var userId
+  var userId;
+  chrome.identity.getProfileUserInfo(function(info){
+    userId = info.id;
+  })
+  console.log(userId);
+
+//  var email = 'no id'
   firebase.auth().signInAnonymously();
-  firebase.auth().onAuthStateChanged(firebaseUser => {
-    console.log(firebaseUser);
-    userId = firebaseUser.uid;
-  });
+  // firebase.auth().onAuthStateChanged(firebaseUser => {
+  //   if (userId == 'no id'){
+  //     console.log(firebaseUser);
+  //     userId = firebaseUser.uid;
+  //   }
+  // });
 
 
   chrome.runtime.onMessage.addListener((msg, sender, response) => {

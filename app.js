@@ -1,3 +1,4 @@
+
 window.firstOpen = false;
 function fetchNotes(){
   //Fetch notes form database
@@ -148,3 +149,4 @@ button.addEventListener('click', () => {
 picker.on('emoji', emoji => {
     button.innerText = emoji;
 });
+
