@@ -7,9 +7,9 @@ Notes are stored using a firebase realtime database. User data is managed via th
 
 
 ## How to Run
-- Open up the extensions window in chrome (click the ellipses menu button at the top right corner and select More Tools > Extensions or enter chrome://extensions in address bar)
+- Open up the extensions window in chrome (click the ellipses menu button at the top right corner and select More Tools > Extensions or enter [chrome://extensions](chrome://extensions) in address bar)
 - Enable developer mode
-- A button will appear, 'Load Unpacked', which will allow you to install to the folder containing the chrome extension
+- A button will appear, <strong>'Load Unpacked'</strong>, which will allow you to install to the folder containing the chrome extension
 - The extension should now be working
 
 
