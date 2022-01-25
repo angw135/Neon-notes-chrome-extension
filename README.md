@@ -1,7 +1,7 @@
-# Note Taking Chrome Extension
-A chrome extension that allows you to write notes in the new tab window, inspired by notion. Users can save and delete notes while customizing the notes emoji:
+# Note-Taking Chrome Extension
+A chrome extension that allows you to write notes in the new tab window, inspired loosely by notion. Users can save and delete notes while customizing the notes icon. Bold, italicized and underlined text is stylized to mimick neon lights to add emphasis:
 
-![Screenshot (9)](https://user-images.githubusercontent.com/41014992/150899610-733f1a2d-6eed-4736-a0b7-86363ca5c322.png)
+![Screenshot (11)](https://user-images.githubusercontent.com/41014992/151041594-265bdf04-a87f-46b5-8834-5e9d99ecd729.png)
 
 Written using HTML/CSS and JS. Notes are stored using a firebase realtime database, where user data is managed via the authentication functionalies offered by firebase.
 
