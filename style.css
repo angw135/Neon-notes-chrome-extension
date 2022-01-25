@@ -1,0 +1,132 @@
+html, body{
+    height:100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+h1{
+    font-family: Roboto, Segoe UI, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2{
+    font-family: Roboto, Segoe UI, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px; 
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+}
+
+body{
+    background: #CEC5DF;
+    color: #30283E;
+}
+
+body.dark{
+    background: #30283E;
+    color: #CEC5DF;
+}
+
+div.main{
+    display:flex;
+    height: 100%;
+}
+aside.sidebar{
+    width: 300px;
+    background: #887B9F;
+    height: 100%;
+    position: fixed;
+}
+.dark aside.sidebar{
+    background: #292234
+}
+div.newNote{
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+section.holder{
+    margin-left: 300px;
+    width: -webkit-fill-available;
+    height: 100%;
+    padding: 6em 8em;
+}
+div.icon{
+    height: 30px;
+    width: 50px;
+    line-height: 30px;
+    font-size: 35px;
+}
+.holder div.icon{
+    cursor:pointer;
+}
+
+.holder div.icon, .holder h1{
+    display: inline-block;
+    vertical-align: middle;
+}
+.holder div.post-body{
+    padding-bottom: 4em;
+}
+
+[contenteditable]:focus{
+    outline:0px solid transparent;
+}
+[placeholder]:empty:before{
+    content: attr(placeholder);
+    color: inherit;
+    opacity:0.5;
+    cursor:text;
+}
+[placeholder]:empty:focus:before{
+    content: "";
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.newNote, ul li{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding: 5px 20px;
+}
+.newNote:hover,
+ul li.active,
+ul li:hover{
+    background-color: #716785;
+}
+
+.deletePage{
+    margin-right: 15px;
+}
+.savePage, .deletePage{
+    float: right;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 3px;
+    border: 2px solid;
+    color: #CEC5DF;
+    font-family:  Roboto, 'Segoe UI', 'Open Sans', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.savePage:hover, .deletePage:hover{
+    background:#CEC5DF;
+    color: black;
+}
+.hidden{
+    display: none;
+}
+.post-body{
+    min-height: 100px;
+    width: 100%;
+}

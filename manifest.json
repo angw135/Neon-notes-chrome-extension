@@ -1,0 +1,15 @@
+{
+    "name": "Notes extension",
+    "version": "1.0",
+    "description": "Take notes on new tab window:)",
+    "permissions":[
+        "identity.email"
+    ],
+    "background": {
+        "service_worker": "firebase.js"
+    },
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "manifest_version": 3
+}
