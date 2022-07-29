@@ -1,5 +1,5 @@
 # Note-Taking Chrome Extension
-A chrome extension that allows you to write notes in the new tab window, inspired loosely by notion. Users can save and delete notes while customizing the notes icon. Bold, italicized and underlined text is stylized to mimick neon lights to add emphasis:
+A chrome extension that allows you to write notes in the new tab window, inspired loosely by notion. Users can save and delete notes while customizing the notes icon. Bold, italicized and underlined text is stylized to mimick neon lights:
 
 ![Screenshot (11)](https://user-images.githubusercontent.com/41014992/151041594-265bdf04-a87f-46b5-8834-5e9d99ecd729.png)
 
